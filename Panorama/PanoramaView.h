@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <GLKit/GLKit.h>
 
 /**
  * @class Panorama View
@@ -66,6 +67,9 @@
  * @param Azimuth(-π to π) Altitude(-.5π to .5π)
  */
 -(void) orientToAzimuth:(float) azimuth Altitude:(float)altitude;
+
+/// Shift the horizonal alignment, move the center pixel of the image away from cardinal north. in degrees
+@property (nonatomic) float cardinalOffset;
 
 
 /*  projection & touches  */
